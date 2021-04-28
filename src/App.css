@@ -10,7 +10,11 @@ form > div > label::after {
 
 
 /* Styleze Validation */
-
+.error {
+  display: none;
+  color: tomato;
+  margin-left: .5rem;
+}
 input:valid,
 select:valid {
   border: 1px solid green;
@@ -18,4 +22,8 @@ select:valid {
 input:invalid,
 select:invalid {
   border: 1px solid red;
+}
+input:invalid + .error,
+select:invalid + .error {
+  display: inline;
 }

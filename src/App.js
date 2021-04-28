@@ -21,6 +21,7 @@ function App() {
           name="firstName"
           id="firstName"
           required />
+          <span className="error">required firstName</span>
       </div>
       <div>
         <label for="lastName">Last name</label>
@@ -28,6 +29,8 @@ function App() {
           name="lastName"
           id="lastName"
           required />
+          <span className="error">required lastName</span>
+
       </div>
       <div>
         <label for="email">Email</label>
@@ -35,6 +38,8 @@ function App() {
           name="email"
           id="email"
           required />
+          <span className="error">required Email</span>
+
       </div>
       <div>
         <label for="phone">Phone</label>
@@ -44,6 +49,8 @@ function App() {
           minlength="10"
           maxlength="10"
           required />
+          <span className="error">required Phone</span>
+
       </div>
       <div>
         <label for="dateOfBirth">Date of birth</label>
@@ -51,6 +58,8 @@ function App() {
           name="dateOfBirth"
           id="dateOfBirth"
           required />
+          <span className="error">required Date Of Birth</span>
+
       </div>
       <div>
         <label for="gender">Gender</label>
@@ -61,6 +70,7 @@ function App() {
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
+        <span className="error">required Gender</span>
       </div>
       <div>
         <label>Education</label>
@@ -70,7 +80,7 @@ function App() {
               name="education"
               id="school"
               value="school"
-              required /> School
+              required />School
           </label>
         </div>
         <div>
@@ -116,6 +126,7 @@ function App() {
           name="address"
           id="address"
           required />
+          <span className="error">required Address</span>
       </div>
       <div>
         <label for="city">City</label>
@@ -123,6 +134,7 @@ function App() {
           name="city"
           id="city"
           required />
+          <span className="error">required City</span>
       </div>
       <div>
         <label for="zip">ZIP</label>
@@ -132,6 +144,7 @@ function App() {
           min="720000"
           max="740000"
           required />
+          <span className="error">required ZIP</span>
       </div>
       <div>
         <button>Submit</button>
