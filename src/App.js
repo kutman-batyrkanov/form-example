@@ -8,8 +8,6 @@ function App() {
       lastName: data.get('lastName'),
       gender: data.get('gender'),
       firstName: data.get('email'),
-      firstName: data.get('phone'),
-      education: data.get('education'),
       // ...
     }
     console.log(user);
