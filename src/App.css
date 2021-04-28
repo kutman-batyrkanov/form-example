@@ -1,7 +1,21 @@
-* {
-  margin: 0 auto;
-  padding: 0;
+form > div {
+  padding: .2rem 1rem;
 }
-button {
-  margin-top: 10px;
+form > div > label {
+  margin-right: .5rem;
+}
+form > div > label::after {
+  content: ":";
+}
+
+
+/* Styleze Validation */
+
+input:valid,
+select:valid {
+  border: 1px solid green;
+}
+input:invalid,
+select:invalid {
+  border: 1px solid red;
 }
