@@ -33,7 +33,8 @@ function App() {
         <label for="email">Email</label>
         <input type="email"
           name="email"
-          id="email" />
+          id="email"
+          required />
       </div>
       <div>
         <label for="phone">Phone</label>
